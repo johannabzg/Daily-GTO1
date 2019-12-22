@@ -1,15 +1,15 @@
   <div class="layout-column layout-align-space-around-center">
-      <div class="menu layout-column layout-align-space-around-center">
+      <div class="menu shad layout-column layout-align-space-around-center">
             <img class="logo" src="/img/titre.png" alt="logo" title="logo">
-            <h2>"Your daily source of ev"</h2>
-            <div class="WidthCenter grey layout-align-center-center flex-grow">
-              <p>(current date)</p>
+            <h2 class="p">"Your daily source of ev"</h2>
+            <div class="WidthCenter shad grey layout-align-center-center flex-grow">
+              <p class="p">(current date)</p>
             </div>
       </div>
   
       <div class="titre layout-column flex-auto layout-align-center-center">
             <h1>Titre</h1>
-            <p>Next in 03 hours 40 minutes 59 seconds</p>
+            <p class="p">Next in 03 hours 40 minutes 59 seconds</p>
       </div>
       <article>
         {{#paper-card as |card|}}
@@ -21,10 +21,10 @@
                    {{card.image src="/img/cartes/Ac.jpg" alt="carte3" title="carte3"}}
                  </div>
                  {{#card.content}}
-                   <h5>
+                   <h4 class="p">
                      The titles of Washed Out's breakthrough song and the first single from Paracosm share the
                      two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
-                   </h5>
+                   </h4>
                  {{/card.content}}
              </div>
              
@@ -42,10 +42,16 @@
                  </div>
              </div>
          </div>
+         
+            <a class="WidthCenter grey layout-row layout-align-end-center flex-grow" href="#" >
+              <p>Download GTO+ </p>
+              <img style="width: 3%; margin: 5px;" src="/img/dl-icon.png" alt="download the result">
+            </a>
+          
         {{/paper-card}}
       </article>
-      <div class="WidthCenter grey layout-row layout-align-space-around-end flex-grow">
-        <p>FOOTER</p>
+      <div class="WidthCenter grey layout-row layout-align-space-around-end">
+        <p class="p">FOOTER</p>
       </div>
   </div>
 
