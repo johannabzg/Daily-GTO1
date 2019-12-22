@@ -1,18 +1,38 @@
 @import 'ember-paper';
-.menu {
-  background-color: #919191;
-}
-
-.date {
-  background-color: #cecece;
-  width: 100%;
-  text-align: center;
-}
 body {
   background-color: #bebebe;
 }
-
+.menu {
+  background-color: #c8c8c8;
+}
+.WidthCenter {
+  text-align: center;
+  width: 100%;
+}
 .logo {
   width: 70%;
   padding: 10px;
 }
+.date {
+  background-color: #e1e1e1;
+}
+.titre p {
+  margin: inherit;
+  color: #3f3f3f;
+}
+p {
+ font-family: serif; 
+}
+.result {
+  background-color: #707070;
+  padding: 10px;
+}
+.cartes img {
+  height: 150px;
+  padding: 5px;
+}
+.cartes2 img {
+  height: 90px;
+  padding: 5px;
+}
+
