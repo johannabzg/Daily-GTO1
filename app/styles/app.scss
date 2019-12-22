@@ -10,19 +10,16 @@ body {
   width: 100%;
 }
 .logo {
-  width: 70%;
+  width: 50%;
   padding: 10px;
 }
-
 .grey {
   background-color: #e1e1e1;
 }
-.titre p {
+p {
+  font-family: serif; 
   margin: inherit;
   color: #3f3f3f;
-}
-p {
- font-family: serif; 
 }
 .result {
   background-color: #acacac;
@@ -36,4 +33,6 @@ p {
   height: 90px;
   padding: 5px;
 }
-
+article {
+  width: 70%; 
+}

@@ -8,44 +8,44 @@
       </div>
   
       <div class="titre layout-column flex-auto layout-align-center-center">
-            <h2>Titre</h2>
+            <h1>Titre</h1>
             <p>Next in 03 hours 40 minutes 59 seconds</p>
       </div>
-  
-      {{#paper-card as |card|}}
-        <div class="result layout-row flex-auto">
-           <div class="layout-column flex-auto layout-align-space-around-center">
-               <div class="cartes layout-row layout-align-space-around-start">
-                 {{card.image src="/img/cartes/2c.jpg" alt="carte1" title="carte1"}}
-                 {{card.image src="/img/cartes/3h.jpg" alt="carte2" title="carte2"}}
-                 {{card.image src="/img/cartes/Ac.jpg" alt="carte3" title="carte3"}}
-               </div>
-               {{#card.content}}
-                 <p>
-                   The titles of Washed Out's breakthrough song and the first single from Paracosm share the
-                   two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
-                 </p>
-               {{/card.content}}
-           </div>
-           
-           <div class="layout-column flex-auto layout-align-space-around-center">
-               <div class="layout-row cartes2 layout-align-space-around-center">
-                 {{card.image src="/img/cartes/2c.jpg" alt="carte1" title="carte1"}}
-                 {{card.image src="/img/cartes/3h.jpg" alt="carte2" title="carte2"}}
-               </div>
-               <div class="layout-row">
-                {{card.image src="/img/table1-png.png" alt="table" title="table"}}
-               </div>
-               <div class="layout-row cartes2 layout-align-space-around-center">
-                 {{card.image src="/img/cartes/2c.jpg" alt="carte1" title="carte1"}}
-                 {{card.image src="/img/cartes/3h.jpg" alt="carte2" title="carte2"}}
-               </div>
-           </div>
-       </div>
-        
-       <div class="WidthCenter grey layout-align-center-center flex-grow">
-          <p>FOOTER</p>
-       </div>
-     {{/paper-card}} 
+      <article>
+        {{#paper-card as |card|}}
+          <div class="result layout-row layout-xs-column layout-align-space-around-center">
+             <div class="layout-column flex layout-align-space-around-center">
+                 <div class="cartes layout-row layout-align-space-around-start">
+                   {{card.image src="/img/cartes/2c.jpg" alt="carte1" title="carte1"}}
+                   {{card.image src="/img/cartes/3h.jpg" alt="carte2" title="carte2"}}
+                   {{card.image src="/img/cartes/Ac.jpg" alt="carte3" title="carte3"}}
+                 </div>
+                 {{#card.content}}
+                   <h5>
+                     The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+                     two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+                   </h5>
+                 {{/card.content}}
+             </div>
+             
+             <div class="layout-column flex layout-align-space-around-center">
+                 <div class="layout-row cartes2 layout-align-space-around-center">
+                   {{card.image src="/img/bl.jpg" alt="carte1" title="carte1"}}
+                   {{card.image src="/img/bl.jpg" alt="carte2" title="carte2"}}
+                 </div>
+                 <div class="layout-row">
+                  {{card.image src="/img/table1-png.png" alt="table" title="table"}}
+                 </div>
+                 <div class="layout-row cartes2 layout-align-space-around-center">
+                   {{card.image src="/img/cartes/Ac.jpg" alt="carte1" title="carte1"}}
+                   {{card.image src="/img/cartes/5h.jpg" alt="carte2" title="carte2"}}
+                 </div>
+             </div>
+         </div>
+        {{/paper-card}}
+      </article>
+      <div class="WidthCenter grey layout-row layout-align-space-around-end flex-grow">
+        <p>FOOTER</p>
+      </div>
   </div>
 
