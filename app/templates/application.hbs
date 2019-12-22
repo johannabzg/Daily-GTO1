@@ -1,7 +1,52 @@
-<div class="menu layout-column layout-align-space-around-center">
-  <h1> Subtitle </h1>
-  <img src="img/titre.png">
-  <div class="flex">"I'm above on mobile, and to the left on larger devices."</div>
-</div>
+  <div class="layout-column flex-grow layout-align-space-around-center">
+   <!-- menu --->
+    <div class="menu layout-column layout-align-space-around-center">
+          <img class="logo" src="/img/titre.png" alt="logo" title="logo">
+          <p>"Your daily source of ev"</p>
+          <div class="date"><p>Day 5 December 2019</p></div>
+    </div>
+   <!-- timer --->
+    {{#paper-card as |card|}}
+      {{#card.title as |title|}}
+        {{#title.text as |text|}}
+          {{#text.headline}}TIMER{{/text.headline}}
+        {{/title.text}}
+      {{/card.title}}
+    {{/paper-card}}
+  
+   
+    <!-- result --->
+     {{#paper-card as |card| }}
+     <div class="layout-row flex-grow">
+        <div class="left">
+        {{#card.header as |header|}}
+            {{#header.text as |text|}}
+              {{#text.title}}
+              <!-- 3 cartes --->
+              <div class="Cartes">
+              {{card.image src="/img/cartes/2c.jpg" alt="carte1" title="carte1" height="150px"}}
+              {{card.image src="/img/cartes/3h.jpg" alt="carte2" title="carte2"}}
+              {{card.image src="/img/cartes/Ac.jpg" alt="carte3" title="carte3"}}
+              </div>
+              {{/text.title}}
+            {{/header.text}}
+        {{/card.header}}
+        
+        <!-- text --->
+        {{#card.content}}
+            <p>
+              The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+              two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+            </p>
+        {{/card.content}}
+        </div>
+        <!-- table --->
+        <div class="right">
+         {{card.image src="/img/table1-png.png" alt="table" title="table"}}
+        </div>
+      </div>
+     {{/paper-card}}
+     
+    
+  </div>
 
-{{outlet}}
