@@ -1,3 +1,4 @@
+{{#each model as |item|}}
   <div class="layout-column layout-align-space-around-center">
       <div class="menu shad layout-column layout-align-space-around-center">
             <img class="logo" src="/img/titre.png" alt="logo" title="logo">
@@ -8,7 +9,7 @@
       </div>
 
       <div class="titre layout-column flex-auto layout-align-center-center">
-            <h1>Titre</h1>
+            <h1>{{item.title}}</h1>
             <p class="p">Next in 03 hours 40 minutes 59 seconds</p>
       </div>
       <article>
@@ -16,15 +17,23 @@
           <div class="result layout-row layout-xs-column layout-align-space-around-center">
              <div class="layout-column flex layout-align-space-around-center">
                  <div class="cartesleft layout-row layout-align-space-around-start">
-                   {{card.image src="/img/cartes/2c.jpg" alt="carte1" title="carte1"}}
-                   {{card.image src="/img/cartes/3h.jpg" alt="carte2" title="carte2"}}
-                   {{card.image src="/img/cartes/Ac.jpg" alt="carte3" title="carte3"}}
+                   <img src={{item.flop1}} alt="card1" title="card1">
+                   <img src={{item.flop2}} alt="card2" title="card2">
+                   <img src={{item.flop3}} alt="card3" title="card3">
                  </div>
                  {{#card.content}}
                    <h3>
-                     The titles of Washed Out's breakthrough song and the first single from Paracosm share the
-                     two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+                    Out of position, against a range of {{item.vilainRange_percent}} % we must:
                    </h3>
+                   <h2>
+                     check/call: {{item.checkCall}} %
+                   </h2>
+                   <h2>
+                     check/fold: {{item.checkFold}} %
+                   </h2>
+                   <h2>
+                     bet: {{item.bet}} %
+                   </h2>
                  {{/card.content}}
              </div>
 
@@ -37,8 +46,8 @@
                   {{card.image src="/img/Table1-png.png" alt="poker table" title="table"}}
                  </div>
                  <div class="layout-row cartesright layout-align-space-around-center">
-                   {{card.image src="/img/cartes/Ac.jpg" alt="carte1" title="carte1"}}
-                   {{card.image src="/img/cartes/5h.jpg" alt="carte2" title="carte2"}}
+                   <img src={{item.heroHand1}} alt="hero1" title="hero1">
+                   <img src={{item.heroHand2}} alt="hero2" title="hero2">
                  </div>
              </div>
          </div>
@@ -55,3 +64,4 @@
   <div class="WidthCenter darkgrey layout-row layout-align-space-around-end">
       <p class="p">FOOTER</p>
   </div>
+{{/each}}
