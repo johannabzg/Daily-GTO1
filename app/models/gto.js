@@ -14,6 +14,7 @@ export default DS.Model.extend ({
   checkCall: DS.attr('string'),
   checkFold: DS.attr('string'),
   bet: DS.attr('string'),
+  gtoUrl: DS.attr('string'),
   today: DS.attr('string', {
     defaultValue() {
         return new Date();
