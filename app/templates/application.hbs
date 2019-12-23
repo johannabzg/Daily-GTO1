@@ -6,13 +6,13 @@
             <div class="WidthCenter shad darkgrey layout-align-center-center flex-grow">
               <p class="p">{{moment-format item.today 'D MMMM YYYY'}}</p>
             </div>
-            <p class="p">Next in {{my-countdown startDate='11/24/2020 00:00:00 GMT'}}</p>
+            <p class="p">Next in {{my-countdown startDate=''}}</p>
       </div>
 
       <div class="titre layout-column flex-auto layout-align-center-center">
             <h1>{{item.title}}</h1>
       </div>
-      
+
       <article>
         {{#paper-card as |card|}}
           <div class="result layout-row layout-xs-column layout-align-space-around-center">
@@ -60,7 +60,7 @@
            <p>Download GTO+</p>
            {{/paper-button}}
          </div>
-         
+
         {{/paper-card}}
       </article>
 
