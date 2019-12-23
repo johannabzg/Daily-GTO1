@@ -1,9 +1,13 @@
 @import 'ember-paper';
 body {
-  background-color: #dcdcdc;
+  background-color: #f6f6f6;
 }
-h3, h2, h1 {
-  font-family: 'Roboto Slab', serif;
+h3, h2, {
+  font-family: 'Quicksand', serif;
+}
+h1 {
+  text-transform: uppercase;
+  font-family: 'Sulphur Point', serif;
 }
 a {
   text-decoration: none;
@@ -31,7 +35,7 @@ a {
   width: 100%;
 }
 .p {
-  font-family: 'Roboto Slab', serif; 
+  font-family: 'Quicksand', serif;
   margin: 5px;
   color: #3f3f3f;
   font-size: larger;
