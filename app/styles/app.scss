@@ -2,8 +2,11 @@
 body {
   background-color: #f6f6f6;
 }
-h3, h2, {
+h3, h2, p {
   font-family: 'Quicksand', serif;
+}
+.p-article {
+  font-size: x-large;
 }
 h1 {
   text-transform: uppercase;
@@ -64,7 +67,7 @@ article {
   margin: 20px;
 }
 .fondText md-card-content {
-  padding: 0px 20px 0px 20px;
+  padding: 20px;
 }
 .md-button {
   background-color: #0083f8;
@@ -73,4 +76,7 @@ article {
 .md-button:hover {
   background-color: #115898 !important;
   color: white;
+}
+.bold {
+  font-weight: bold;
 }
