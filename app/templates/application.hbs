@@ -1,12 +1,12 @@
 {{#each model as |item|}}
   <div class="layout-column layout-align-space-around-center">
       <div class="menu shad layout-column layout-align-space-around-center">
-            <img class="logo" src="/img/titre.png" alt="logo" title="logo">
+            <img class="logo" src="/img/titre2.png" alt="logo" title="logo">
             <h2 style="font-size: x-large; color: grey;">Your daily source of poker EV</h2>
             <div class="WidthCenter shad darkgrey layout-align-center-center flex-grow">
               <p class="p">{{moment-format item.today 'D MMMM YYYY'}}</p>
             </div>
-            <p class="p">Next in {{my-countdown startDate=''}}</p>
+            <p class="p p-Time">Next in {{my-countdown startDate=''}}</p>
       </div>
 
       <div class="titre layout-column flex-auto layout-align-center-center">
