@@ -2,12 +2,9 @@
 body {
   background-color: #f6f6f6;
 }
-h3 {
+h3, h2 {
   font-family: 'Roboto Slab', serif;
   font-size: x-large;
-  background-color: #faebd78a;
-  padding: 10px;
-  box-shadow: 0px 0px 7px 1px #00000045;
 }
 .logo {
   width: 40%;
@@ -49,4 +46,12 @@ h3 {
 }
 article {
   width: 70%; 
+}
+.fondText {
+  background-color: #d8d8d8;
+  box-shadow: 0 0 3px 0px #000000b5;
+  margin: 20px;
+}
+.md-button {
+  background-color: #0083f8;
 }
