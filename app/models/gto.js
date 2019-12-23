@@ -13,5 +13,10 @@ export default DS.Model.extend ({
   flop3: DS.attr('string'),
   checkCall: DS.attr('string'),
   checkFold: DS.attr('string'),
-  bet: DS.attr('string')
+  bet: DS.attr('string'),
+  today: DS.attr('string', {
+    defaultValue() {
+        return new Date();
+    }
+})
 })
