@@ -2,7 +2,7 @@
   <div class="layout-column layout-align-space-around-center">
       <div class="menu shad layout-column layout-align-space-around-center">
             <img class="logo" src="/img/titre.png" alt="logo" title="logo">
-            <h2 style="font-family: 'Roboto Slab', serif; font-size: x-large;">"Your daily source of poker for EV"</h2>
+            <h2 style="font-family: 'Roboto Slab', serif; font-size: x-large; color: grey;">Your daily source of poker for EV</h2>
             <div class="WidthCenter shad darkgrey layout-align-center-center flex-grow">
               <p class="p">{{moment-format item.today 'D MMMM YYYY'}}</p>
 
@@ -22,20 +22,22 @@
                    <img src={{item.flop2}} alt="card2" title="card2">
                    <img src={{item.flop3}} alt="card3" title="card3">
                  </div>
-                 {{#card.content}}
-                   <h3>
-                    Out of position, against a range of {{item.vilainRange_percent}} % we must:
-                   </h3>
-                   <h2>
-                     check/call: {{item.checkCall}} %
-                   </h2>
-                   <h2>
-                     check/fold: {{item.checkFold}} %
-                   </h2>
-                   <h2>
-                     bet: {{item.bet}} %
-                   </h2>
-                 {{/card.content}}
+                 <div class="fondText">
+                  {{#card.content}}
+                    <h3>
+                     Out of position, against a range of {{item.vilainRange_percent}} % we must:
+                    </h3>
+                    <h2>
+                      check/call: {{item.checkCall}} %
+                    </h2>
+                    <h2>
+                      check/fold: {{item.checkFold}} %
+                    </h2>
+                    <h2>
+                      bet: {{item.bet}} %
+                    </h2>
+                  {{/card.content}}
+                 </div>
              </div>
 
              <div class="layout-column flex layout-align-space-around-center">
@@ -43,7 +45,7 @@
                    {{card.image src="/img/bl.jpg" alt="carte1" title="carte1"}}
                    {{card.image src="/img/bl.jpg" alt="carte2" title="carte2"}}
                  </div>
-                 <div class="layout-row">
+                 <div>
                   {{card.image src="/img/Table1-png.png" alt="poker table" title="table"}}
                  </div>
                  <div class="layout-row cartesright layout-align-space-around-center">
@@ -53,16 +55,18 @@
              </div>
          </div>
 
-            <a class="WidthCenter grey layout-row layout-align-end-center flex-grow" href="#" >
-              <p>Download GTO+ </p>
-              <img style="width: 3%; margin: 5px;" src="/img/dl-icon.png" alt="download the result">
-            </a>
-
+         <div class="layout-row layout-align-end-center">
+           {{#paper-button raised=true href="#" target="_blank" }}
+           <p>Download GTO+</p>
+           {{/paper-button}}
+         </div>
+         
         {{/paper-card}}
       </article>
 
   </div>
   <div class="WidthCenter darkgrey layout-row layout-align-space-around-end">
-      <p class="p">FOOTER</p>
+      <p class="p">string	Set the content of the button when used as a blockless component.
+mini	boolean	Display as a mini-sized button. Implies fab, unless fab is explicity set falsy.</p>
   </div>
 {{/each}}

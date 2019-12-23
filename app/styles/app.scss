@@ -2,12 +2,9 @@
 body {
   background-color: #f6f6f6;
 }
-h3 {
+h3, h2, h1 {
   font-family: 'Roboto Slab', serif;
-  font-size: x-large;
-  background-color: #faebd78a;
-  padding: 10px;
-  box-shadow: 0px 0px 7px 1px #00000045;
+  
 }
 .logo {
   width: 40%;
@@ -16,6 +13,12 @@ h3 {
 .menu {
   background-color: #c8c8c8;
 }
+.grey {
+  background-color: #e1e1e1;
+}
+.darkgrey {
+  background-color: #8d8d8d;
+}
 .shad {
   box-shadow: 0px 0px 2px 0 #0000009c;
 }
@@ -23,12 +26,7 @@ h3 {
   text-align: center;
   width: 100%;
 }
-.grey {
-  background-color: #e1e1e1;
-}
-.darkgrey {
-  background-color: #8d8d8d;
-}
+
 .p {
   font-family: 'Roboto Slab', serif; 
   margin: 5px;
@@ -49,4 +47,13 @@ h3 {
 }
 article {
   width: 70%; 
+}
+.fondText {
+  background-color: #d8d8d8;
+  box-shadow: 0 0 3px 0px #00000070;
+  margin: 20px;
+}
+.md-button.md-raised:not([disabled]) {
+  background-color: #0083f8;
+  color: white;
 }
