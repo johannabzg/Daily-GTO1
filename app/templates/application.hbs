@@ -16,11 +16,12 @@
       <article>
         {{#paper-card as |card|}}
           <div class="result layout-row layout-xs-column layout-align-space-around-center">
+            
              <div class="layout-column flex layout-align-space-around-center">
                  <div class="cartesleft layout-row layout-align-space-around-start">
-                   <img src={{item.flop1}} alt="card1" title="card1">
-                   <img src={{item.flop2}} alt="card2" title="card2">
-                   <img src={{item.flop3}} alt="card3" title="card3">
+                   <img src={{item.flop1}} alt="card1">
+                   <img src={{item.flop2}} alt="card2">
+                   <img src={{item.flop3}} alt="card3">
                  </div>
                  <div class="fondText">
                   {{#card.content}}
@@ -39,24 +40,32 @@
                   {{/card.content}}
                  </div>
              </div>
-
+{{! Here, I place the button modal and the IF  }}
              <div class="layout-column flex layout-align-space-around-center">
                  <div class="layout-row cartesright layout-align-space-around-center">
-                   {{card.image src="/img/Carte-dos.png" alt="carte1" title="carte1"}}
-                   {{card.image src="/img/Carte-dos.png" alt="carte2" title="carte2"}}
+                    <button {{action (action "toggleModal")}}>{{card.image src="/img/Carte-dos.png" alt="carte1" title="Show vilain range"}}</button>
+                    <button {{action (action "toggleModal")}}>{{card.image src="/img/Carte-dos.png" alt="carte1" title="Show vilain range"}}</button>
+                    {{#if isShowingModal}}
+                      {{#modal-dialog onClose=(action "toggleModal") targetAttachment="center" translucentOverlay=true}}
+                        Oh hai there!
+                      {{/modal-dialog}}
+                    {{/if}}
                  </div>
-                 <div>
-                  {{card.image src="/img/Table1-png.png" alt="poker table" title="table"}}
+                 
+                 <div class="table">
+                   {{card.image src="/img/Table-v2-1.png" alt="poker table" title="table"}}
                  </div>
+                 
                  <div class="layout-row cartesright layout-align-space-around-center">
-                   <img src={{item.heroHand1}} alt="hero1" title="hero1">
-                   <img src={{item.heroHand2}} alt="hero2" title="hero2">
+                   <img src={{item.heroHand1}} alt="hero1">
+                   <img src={{item.heroHand2}} alt="hero2">
                  </div>
+                 
              </div>
          </div>
-
+        {{! Download button }}
          <div class="result layout-row layout-align-end-center">
-          <button>
+          <button type="button">
             <a href={{item.gtoUrl}} target="_blank">
               <p>Download GTO+ file</p>
             </a>
