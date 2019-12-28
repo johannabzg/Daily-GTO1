@@ -38,9 +38,7 @@ a {
 .shad {
   box-shadow: 0px 0px 2px 0 #0000009c;
 }
-.table img{
-  height: 280px;
-}
+
 .WidthCenter {
   text-align: center;
   width: 100%;
@@ -91,4 +89,30 @@ article {
 }
 .bold {
   font-weight: bold;
+}
+
+
+/* Conteneur */
+.overlay-image {
+    display: inline-block;
+    position: relative;
+}
+/* Image */
+.overlay-image .image {
+ display: block;
+ width: 100%;
+ height: auto;
+}
+/* Texte */
+.overlay-image .text {
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    color: black;
+    height: 100%;
+    width: 100%;
 }
