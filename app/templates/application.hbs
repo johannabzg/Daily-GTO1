@@ -16,7 +16,7 @@
       <article>
         {{#paper-card as |card|}}
           <div class="result layout-row layout-xs-column layout-align-space-around-center">
-            
+
              <div class="layout-column flex layout-align-space-around-center">
                  <div class="cartesleft layout-row layout-align-space-around-start">
                    <img src={{item.flop1}} alt="card1">
@@ -33,6 +33,11 @@
                       check/call: {{item.checkCall}}%
                       </p>
                     {{/if}}
+                    {{#if item.checkRaise}}
+                      <p class="p-article bold">
+                      check/raise: {{item.checkRaise}}%
+                      </p>
+                    {{/if}}
                     {{#if item.checkFold}}
                       <p class="p-article bold">
                       check/fold: {{item.checkFold}}%
@@ -45,7 +50,7 @@
                       {{else}}
                       <p>nopp</p>
                     {{/if}}
-                    
+
                   {{/card.content}}
                  </div>
              </div>
@@ -59,21 +64,21 @@
                         <div class="text-card" >Show<br>range</div>
                       </button>
                     </div>
- 
+
                     {{#if isShowingModal}}
                       {{#modal-dialog onClose=(action "toggleModal") targetAttachment="center"}}
-                        Bientôt disponible !
+                        {{item.vilainRange}}
                       {{/modal-dialog}}
                     {{/if}}
                  </div>
-                 
+
                  <div class="table overlay-image">
                    {{card.image class="image" src="/img/Table-v2-1.png" alt="poker table" title="table"}}
-                   <div class="text layout-column layout-align-space-between-center"><p class="bold">{{item.bet}}
-                   $</p><p class="bold">{{item.bet}} $</p><p class="bold">{{item.bet}}
+                   <div class="text layout-column layout-align-space-between-center"><p class="bold">{{item.heroStack}}
+                   $</p><p class="bold">{{item.pot}} $</p><p class="bold">{{item.vilainStack}}
                    $</p></div>
                  </div>
-                 
+
                  <div class="layout-row cartesright layout-align-space-around-center">
                    <div class="overlay-image">
                       <button  {{action (action "toggleModalu")}}>
@@ -84,11 +89,11 @@
                    </div>
                     {{#if isShowingModalu}}
                       {{#modal-dialog onClose=(action "toggleModalu") targetAttachment="center"}}
-                        Bientôt disponible 2 !
+                        {{item.heroRange}}
                       {{/modal-dialog}}
                     {{/if}}
                  </div>
-                 
+
              </div>
          </div>
          {{! Download button }}
