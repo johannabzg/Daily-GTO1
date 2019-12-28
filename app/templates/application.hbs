@@ -28,23 +28,38 @@
                     <p class="p-article">
                      Out of position, against a range of {{item.vilainRange_percent}}% we must:
                     </p>
-                    <p class="p-article bold">
+                    {{#if item.checkCall}}
+                      <p class="p-article bold">
                       check/call: {{item.checkCall}}%
-                    </p>
-                    <p class="p-article bold">
+                      </p>
+                    {{/if}}
+                    {{#if item.checkFold}}
+                      <p class="p-article bold">
                       check/fold: {{item.checkFold}}%
-                    </p>
-                    <p class="p-article bold">
+                      </p>
+                    {{/if}}
+                    {{#if item.bet}}
+                      <p class="p-article bold">
                       bet: {{item.bet}}%
-                    </p>
+                      </p>
+                      {{else}}
+                      <p>nopp</p>
+                    {{/if}}
+                    
                   {{/card.content}}
                  </div>
              </div>
 {{! Here, I place the button modal and the IF  }}
              <div class="layout-column flex layout-align-space-around-center">
                  <div class="layout-row cartesright layout-align-space-around-center">
-                    <button class="overlay-image" {{action (action "toggleModal")}}>{{card.image  src="/img/Carte-dos.png" alt="carte1" title="Show vilain range"}}<div class="text-card" >Show<br>range</div></button>
-                    <button class="overlay-image" {{action (action "toggleModal")}}>{{card.image  src="/img/Carte-dos.png" alt="carte1" title="Show vilain range"}}<div class="text-card" >Show<br>range</div></button>
+                    <div class="overlay-image">
+                      <button  {{action (action "toggleModal")}}>
+                        {{card.image  src="/img/Carte-dos.png" alt="carte1" title="Show vilain range"}}
+                        {{card.image  src="/img/Carte-dos.png" alt="carte1" title="Show vilain range"}}
+                        <div class="text-card" >Show<br>range</div>
+                      </button>
+                    </div>
+ 
                     {{#if isShowingModal}}
                       {{#modal-dialog onClose=(action "toggleModal") targetAttachment="center"}}
                         Bientôt disponible !
@@ -60,13 +75,23 @@
                  </div>
                  
                  <div class="layout-row cartesright layout-align-space-around-center">
-                   <img src={{item.heroHand1}} alt="hero1">
-                   <img src={{item.heroHand2}} alt="hero2">
+                   <div class="overlay-image">
+                      <button  {{action (action "toggleModalu")}}>
+                        <img src={{item.heroHand1}} alt="hero1">
+                        <img src={{item.heroHand2}} alt="hero2">
+                        <div class="text-card" >Show<br>range</div>
+                      </button>
+                   </div>
+                    {{#if isShowingModalu}}
+                      {{#modal-dialog onClose=(action "toggleModalu") targetAttachment="center"}}
+                        Bientôt disponible 2 !
+                      {{/modal-dialog}}
+                    {{/if}}
                  </div>
                  
              </div>
          </div>
-        {{! Download button }}
+         {{! Download button }}
          <div class="result layout-row layout-align-end-center">
           <button type="button">
             <a href={{item.gtoUrl}} target="_blank">
