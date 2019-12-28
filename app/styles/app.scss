@@ -116,3 +116,19 @@ article {
     height: 100%;
     width: 100%;
 }
+.text-card {
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    font-size: 0.8em;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 30%;
+    color: transparent;
+    height: 100%;
+    width: 100%;
+}
+.text-card:hover {
+  color: white;
+}

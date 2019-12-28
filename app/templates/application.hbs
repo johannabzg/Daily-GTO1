@@ -43,10 +43,10 @@
 {{! Here, I place the button modal and the IF  }}
              <div class="layout-column flex layout-align-space-around-center">
                  <div class="layout-row cartesright layout-align-space-around-center">
-                    <button {{action (action "toggleModal")}}>{{card.image src="/img/Carte-dos.png" alt="carte1" title="Show vilain range"}}</button>
-                    <button {{action (action "toggleModal")}}>{{card.image src="/img/Carte-dos.png" alt="carte1" title="Show vilain range"}}</button>
+                    <button class="overlay-image" {{action (action "toggleModal")}}>{{card.image  src="/img/Carte-dos.png" alt="carte1" title="Show vilain range"}}<div class="text-card" >Show<br>range</div></button>
+                    <button class="overlay-image" {{action (action "toggleModal")}}>{{card.image  src="/img/Carte-dos.png" alt="carte1" title="Show vilain range"}}<div class="text-card" >Show<br>range</div></button>
                     {{#if isShowingModal}}
-                      {{#modal-dialog onClose=(action "toggleModal") targetAttachment="center" translucentOverlay=true}}
+                      {{#modal-dialog onClose=(action "toggleModal") targetAttachment="center"}}
                         Oh hai there!
                       {{/modal-dialog}}
                     {{/if}}
@@ -54,7 +54,9 @@
                  
                  <div class="table overlay-image">
                    {{card.image class="image" src="/img/Table-v2-1.png" alt="poker table" title="table"}}
-                   <div class="text layout-column layout-align-space-between-center"><p class="bold">{{item.bet}}</p><p class="bold">{{item.bet}} $</p><p class="bold">{{item.bet}}</p></div>
+                   <div class="text layout-column layout-align-space-between-center"><p class="bold">{{item.bet}}
+                   $</p><p class="bold">{{item.bet}} $</p><p class="bold">{{item.bet}}
+                   $</p></div>
                  </div>
                  
                  <div class="layout-row cartesright layout-align-space-around-center">
