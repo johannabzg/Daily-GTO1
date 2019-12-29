@@ -1,8 +1,8 @@
 @import 'ember-paper';
 @import "ember-modal-dialog/ember-modal-structure";
 @import "ember-modal-dialog/ember-modal-appearance";
-body {
-  background-color: #f6f6f6;
+body, .white {
+  background-color: #fff;
 }
 h3, h2, p {
   font-family: 'Quicksand', serif;
