@@ -72,13 +72,17 @@
 
                  <div class="table overlay-image">
                    {{card.image class="image" src="/img/Table-v2-1.png" alt="poker table" title="table"}}
-                   <div class="text layout-column layout-align-space-between-center"><p class="bold">{{item.heroStack}}
-                   $</p><p class="bold">{{item.pot}} $</p><p class="bold">{{item.vilainStack}}
-                   $</p></div>
+                   <div class="text layout-column layout-align-space-between-center">
+                      <p class="bold" style="color: #7d2a01;">{{item.heroStack}} $</p>
+                      <p class="bold" style="color: #023a0c;"></p>
+                      <p class="bold" style="color: #01363e;">{{item.pot}} $</p>
+                      <p class="bold" style="color: #023a0c;"></p>
+                      <p class="bold" style="color: #7d2a01;">{{item.vilainStack}} $</p>
+                   </div>
                  </div>
 
                  <div class="layout-row cartesright layout-align-space-around-center">
-                   <div class="overlay-image">
+                   <div class="overlay-image" style="margin-top: 4px;">
                       <button  {{action (action "toggleModalu")}}>
                         <img src={{item.heroHand1}} alt="hero1">
                         <img src={{item.heroHand2}} alt="hero2">
