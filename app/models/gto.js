@@ -13,6 +13,7 @@ export default DS.Model.extend ({
   pot: DS.attr('string'),
   heroStack: DS.attr('string'),
   vilainStack: DS.attr('string'),
+  vilainBetSize: DS.attr('string'),
   flop1: DS.attr('string'),
   flop2: DS.attr('string'),
   flop3: DS.attr('string'),
