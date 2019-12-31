@@ -10,6 +10,7 @@ export default DS.Model.extend ({
   heroRange_percent: DS.attr('string'),
   type: DS.attr('string'),
   position: DS.attr('string'),
+  blind: DS.attr('string'),
   pot: DS.attr('string'),
   heroStack: DS.attr('string'),
   vilainStack: DS.attr('string'),
