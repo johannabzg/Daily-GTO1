@@ -10,7 +10,7 @@
       </div>
 
       <div class="titre layout-column flex-auto layout-align-center-center">
-            <h1>{{item.title}}</h1>
+            <h1 style="text-align: center;">{{item.title}}</h1>
       </div>
 
       <article>
@@ -30,22 +30,23 @@
                     </p>
                     {{#if item.checkCall}}
                       <p class="p-article bold">
-                      check/call: {{item.checkCall}}%
+                        check/call: {{item.checkCall}}%
                       </p>
                     {{/if}}
                     {{#if item.checkRaise}}
                       <p class="p-article bold">
-                      check/raise: {{item.checkRaise}}%
+                        check/raise: {{item.checkRaise}}%
                       </p>
                     {{/if}}
                     {{#if item.checkFold}}
                       <p class="p-article bold">
-                      check/fold: {{item.checkFold}}%
+                        check/fold: {{item.checkFold}}%
                       </p>
                     {{/if}}
                     {{#if item.bet}}
                       <p class="p-article bold">
-                      bet: {{item.bet}}%
+                        <hr /> 
+                        bet: {{item.bet}}%
                       </p>
                     {{/if}}
 
@@ -99,7 +100,7 @@
              </div>
          </div>
   {{! Download button }}
-         <div class="result layout-row layout-align-end-center">
+         <div style="background-color: #919191;" class="result layout-row layout-align-end-center">
           <button type="button">
             <a href={{item.gtoUrl}} target="_blank">
               <p>Download GTO+ file</p>
@@ -112,11 +113,11 @@
 
   </div>
   <div style="margin-top: 5%;" class="WidthCenter darkgrey layout-row layout-align-space-around-end">
-      <p style="padding: 10px;" class="p">Simulations are made with GTO+. You can download the GTO+ file to get all turns and rivers already solve in this configuration. GTO+ is required to open the file. </p>
+      <p style="padding: 10px;" class="p media-size">Simulations are made with GTO+. You can download the GTO+ file to get all turns and rivers already solve in this configuration. GTO+ is required to open the file. </p>
   </div>
-    <div class="menu layout-row layout-align-end-center">
-      <p style="padding: 5px;" class="p flex-15"><a href="mailto:admin@dailygto.com">admin@dailygto.com</a></p>
-      <p style="padding: 5px;" class="p flex-15"><a href="mailto:joyartpro@gmail.com">joyartpro@gmail.com</a></p>
+  <div class="menu layout-row layout-align-end-center">
+      <p style="padding: 5px; text-align: start;" class="p flex-25"><a href="mailto:admin@dailygto.com">admin@dailygto.com</a></p>
+      <p style="padding: 5px; text-align: start;" class="p flex-25"><a href="mailto:joyartpro@gmail.com">joyartpro@gmail.com</a></p>
       <p style="color: white; text-align: end; padding-right: 15px;" class="flex ">2019-2020   dailygto.com</p>
   </div>
 {{/each}}
