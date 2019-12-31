@@ -55,7 +55,9 @@
              </div>
 {{! Here, I place the button modal  }}
              <div class="layout-column flex layout-align-space-around-center">
-
+                <div class="bulle-info">
+                  <p>SB/BB {{item.blind}}</p>
+                </div>
                  <div class="layout-row cartesright layout-align-space-around-center">
                     <div class="overlay-image">
                       <button  {{action (action "toggleModal")}}>
@@ -101,7 +103,7 @@
              </div>
          </div>
   {{! Download button }}
-         <div style="background-color: #919191;" class="result layout-row layout-align-end-center">
+         <div style="background-color: #919191;" class="result footer-btn layout-row layout-align-end-center">
           <button type="button">
             <a href={{item.gtoUrl}} target="_blank">
               <p>Download GTO+ file</p>

@@ -103,11 +103,11 @@ span {
     width: 28%;
     position: relative;
     text-align: center;
-    border-color: black;
+    border-color: #000000b5;
     border-style: solid;
     border-width: 1.5px;
-    border-radius: 15px;
-    height: 100px;
+    border-radius: 10px;
+    height: 90px;
     right: -36%;
     z-index: 1;
 }
@@ -188,4 +188,13 @@ span {
   .flex-25 {
     max-width: inherit !important;
   }
+  .cartesleft img {
+    padding: 1px;
+  }
+}
+@media screen and (min-width: 100px) and (max-width: 1024px) {
+  .footer-btn {
+    display: none;
+  }
+  
 }
