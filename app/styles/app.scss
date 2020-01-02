@@ -6,6 +6,7 @@ body, .white {
 }
 h3, h2, p {
   font-family: 'Quicksand', serif;
+  text-align: center;
 }
 .p-article {
   font-size: x-large;
@@ -57,7 +58,7 @@ a {
 }
 .cartesleft img {
   height: 130px;
-  padding: 5px;
+  padding: 2px;
 }
 .cartesright img {
   height: 90px;
@@ -107,7 +108,7 @@ span {
     border-style: solid;
     border-width: 1.5px;
     border-radius: 10px;
-    height: 90px;
+    height: 70px;
     right: -36%;
     z-index: 1;
 }
@@ -159,6 +160,34 @@ span {
   background-color: #ffffff8a;
 }
 
+@media screen and (min-width: 200px) and (max-width: 375px) {
+   .text {
+    line-height: inherit !important;
+  }
+  
+}
+
+@media screen and (min-width: 100px) and (max-width: 600px) {
+  .menu {
+  flex-direction: column;
+  }
+  .menu p {
+    text-align: center;
+    padding: inherit !important;
+  }
+  .flex-25 {
+    max-width: inherit !important;
+  }
+  .cartesleft img {
+    padding: 1px;
+  }
+   .bulle-info {
+    width: 100%;
+  }
+  .reverse {
+    flex-direction: column-reverse;
+  }
+}
 @media screen and (min-width: 200px) and (max-width: 940px) {
   article {
     width: 80%; 
@@ -177,23 +206,14 @@ span {
   }
   .bulle-info {
     right: 0;
-}
+  }
+  .ajust-margin1 {
+    padding-top: 6%;
+  }
+    .ajust-margin2 {
+    padding-bottom: 6%;
+  }
   
-}
-@media screen and (min-width: 100px) and (max-width: 600px) {
-  .menu {
-  flex-direction: column;
-  }
-  .menu p {
-    text-align: center;
-    padding: inherit !important;
-  }
-  .flex-25 {
-    max-width: inherit !important;
-  }
-  .cartesleft img {
-    padding: 1px;
-  }
 }
 @media screen and (min-width: 100px) and (max-width: 1024px) {
   .footer-btn {

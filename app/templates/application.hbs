@@ -15,7 +15,7 @@
 
       <article>
         {{#paper-card as |card|}}
-          <div class="result layout-row layout-xs-column layout-align-space-around-center">
+          <div class="result reverse layout-row layout-xs-column layout-align-space-around-center">
 
              <div class="layout-column flex layout-align-space-around-center">
                  <div class="cartesleft layout-row layout-align-space-around-start">
@@ -55,7 +55,7 @@
              </div>
 {{! Here, I place the button modal  }}
              <div class="layout-column flex layout-align-space-around-center">
-                <div class="bulle-info">
+                <div class="bulle-info bold">
                   <p>SB/BB {{item.blind}}</p>
                 </div>
                  <div class="layout-row cartesright layout-align-space-around-center">
@@ -78,9 +78,9 @@
                    {{card.image class="image" src="/img/Table-v2-1.png" alt="poker table" title="table"}}
                    <div class="text layout-column layout-align-space-between-center">
                       <p class="bold" style="color: #7d2a01;">{{item.vilainStack}} $</p>
-                      <p class="bold" style="color: #023a0c;">{{item.vilainBetSize}} $<span>ok</span></p>
+                      <p class="bold ajust-margin1" style="color: #023a0c; margin-bottom: 0;">{{item.vilainBetSize}} $<span>ok</span></p>
                       <p class="bold" style="color: #01363e;">{{item.pot}} $</p>
-                      <p class="bold" style="color: #023a0c;"><span>ok</span></p>
+                      <p class="bold ajust-margin2" style="color: #023a0c; margin-top: 0;"><span>ok</span></p>
                       <p class="bold" style="color: #7d2a01;">{{item.heroStack}} $</p>
                    </div>
                  </div>
