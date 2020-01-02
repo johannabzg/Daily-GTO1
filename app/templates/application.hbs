@@ -103,12 +103,15 @@
              </div>
          </div>
   {{! Download button }}
-         <div style="background-color: #919191;" class="result footer-btn layout-row layout-align-end-center">
+         <div style="background-color: #919191;" class="result footer-btn layout-row layout-align-space-between-center">
           <button type="button">
             <a href={{item.gtoUrl}} target="_blank">
               <p>Download GTO+ file</p>
             </a>
           </button>
+          <div class="bulle-info2 bold">
+            <p>SB/BB {{item.blind}}</p>
+          </div>
          </div>
 
         {{/paper-card}}
