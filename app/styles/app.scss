@@ -73,6 +73,12 @@ a {
 article {
   width: 75%; 
 }
+.bg-table {
+  background-color: #ffffff54;
+  padding: 5px;
+  border-radius: 3px;
+  border: 2px inset #cecece;
+}
 .fondText {
   background-color: #d8d8d8;
   box-shadow: 0 0 3px 0px #00000070;
@@ -161,13 +167,20 @@ span {
 }
 
 @media screen and (min-width: 200px) and (max-width: 375px) {
-   .text {
+  .text {
     line-height: inherit !important;
   }
-  
+  article {
+    whidth: 95% !important;
+  }
+
 }
 
 @media screen and (min-width: 100px) and (max-width: 600px) {
+  
+  .cartesleft img {
+    height: 108px;
+  }
   .menu {
   flex-direction: column;
   }
@@ -187,10 +200,16 @@ span {
   .reverse {
     flex-direction: column-reverse;
   }
+  .cartesleft {
+    margin-top: 10px;
+  }
+  .fondText {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 200px) and (max-width: 940px) {
   article {
-    width: 80%; 
+    width: 90%; 
   }
   .text {
     line-height: 35px;
