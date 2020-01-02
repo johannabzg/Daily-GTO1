@@ -61,6 +61,9 @@ a {
   height: 130px;
   padding: 2px;
 }
+.cartesleft {
+  padding: 10px;
+}
 .cartesright img {
   height: 90px;
   padding: 2px;
@@ -83,7 +86,7 @@ article {
 .fondText {
   background-color: #d8d8d8;
   box-shadow: 0 0 3px 0px #00000070;
-  margin: 20px;
+  margin-right: 10px;
 }
 .fondText md-card-content {
   padding: 20px;
@@ -99,12 +102,10 @@ article {
 .bold {
   font-weight: bold;
 }
-
 span {
   color: #9acd3200;
   font-size: 1px;
 }
-
 .bulle-info {
     display: none;
     background-color: #ffffff82;
