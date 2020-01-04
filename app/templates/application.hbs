@@ -17,7 +17,7 @@
         {{#paper-card as |card|}}
           <div class="result reverse layout-row layout-align-space-around-center">
 
-             <div class="bg-table layout-column flex-auto layout-align-space-around-center">
+             <div class="bg-table margin-flex layout-column flex-auto layout-align-space-around-center">
                  <div class="cartesleft flex-40 layout-row layout-align-space-around-start">
                    <img src={{item.flop1}} alt="card1">
                    <img src={{item.flop2}} alt="card2">
@@ -85,7 +85,7 @@
                  </div>
 
                  <div class="layout-row cartesright layout-align-space-around-center">
-                   <div class="overlay-image" style="margin-top: 4px;">
+                   <div class="overlay-image">
                       <button  {{action (action "toggleModalu")}}>
                         <img src={{item.heroHand1}} alt="hero1">
                         <img src={{item.heroHand2}} alt="hero2">

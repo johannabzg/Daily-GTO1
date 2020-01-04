@@ -55,7 +55,6 @@ a {
 }
 .result {
   background-color: #aeb5bc;
-  padding: 10px;
 }
 .cartesleft img {
   height: 150px;
@@ -66,7 +65,7 @@ a {
 }
 .cartesright img {
   height: 90px;
-  padding: 2px;
+  padding: 1px;
 }
 .cartesright button {
   padding: inherit;
@@ -107,34 +106,34 @@ span {
   font-size: 1px;
 }
 .bulle-info p, .bulle-info2 p {
-  color: #183e20;
+  color: #13494c;
 }
 .bulle-info {
     display: none;
-    background-color: #64ff8796;
+    background-color: #44c3eb;
     padding: 5px;
     position: relative;
     text-align: center;
-    border-color: #3b4a61b5;
+    border-color: #3b616045;
     border-style: solid;
     border-width: 1.5px;
     height: 70px;
 }
 .bulle-info2 {
-    background-color: #64ff8796;
+    background-color: #44c3eb;
     padding: 5px;
-    width: 25%;
+    width: 20%;
     text-align: center;
-    border-color: #3b6142b5;
+    border-color: #3b616045;
     border-style: solid;
     border-width: 1.5px;
 }
 .button-gto {
     background-color: #fff;
     padding: 5px;
-    width: 25%;
+    width: 20%;
     text-align: center;
-    border-color: #383838b5;
+    border-color: #3838388f;
     border-style: solid;
     border-width: 1.5px;
 }
@@ -145,6 +144,7 @@ span {
 .overlay-image {
     display: inline-block;
     position: relative;
+    margin-top: 5px;
 }
 /* Image */
 .overlay-image .image {
@@ -187,6 +187,9 @@ span {
   color: #070707;
   background-color: #ffffff8a;
 }
+.margin-flex {
+  margin-right: inherit;
+}
 
 @media screen and (min-width: 200px) and (max-width: 375px) {
   .text {
@@ -199,6 +202,9 @@ span {
 }
 
 @media screen and (min-width: 100px) and (max-width: 740px) {
+  .margin-flex {
+    margin-right: 5px;
+  } 
   .cartesleft img {
     height: 108px;
   }
@@ -219,7 +225,7 @@ span {
     flex-direction: column-reverse;
   }
   .cartesleft {
-    margin-top: 10px;
+    margin-bottom: 10px;
   }
   .fondText {
     width: 100%;
